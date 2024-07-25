@@ -51,7 +51,7 @@ void main() {
 }
 
 //Exercise 1
-bool kiemTraSoNguye(int num) {
+bool kiemTraSoNguyen(int num) {
   if (num <= 1) return false;
   if (num == 2) return true;
   if (num % 2 == 0) return false;
@@ -89,7 +89,7 @@ String exercise1(List<List<int>> input) {
   String result = '';
   if (kiemTraCoDuongCheo(input)) {
     int num = giaTriDuongGach(input);
-    if (kiemTraSoNguye(num)) {
+    if (kiemTraSoNguyen(num)) {
       result = 'Giao điểm đường chéo là số nguyên: $num';
     } else {
       int sum = tongChanTrenDuongCheo(input);
